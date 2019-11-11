@@ -285,8 +285,8 @@ export const shortenText = text => {
 
 <details>
 
-<summary> <code> /server/utils.js </code> </summary>
-<!-- ^^^ change is here -->
+<summary> <code> server/utils.js </code> </summary>
+<!-- ^^^ change is here origially had wrong filename-->
 ```js
 module.exports = {
   wordCount(posts) {
