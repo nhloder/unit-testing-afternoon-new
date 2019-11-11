@@ -172,6 +172,7 @@ it('shortenText should cut off extra characters after 100 and add three periods'
 ```
 
 Run `npm run test` again. It breaks! You should get an error that the last 3 characters of the `shortened` string are not `...`. This is because it just so happens calling `.trim()` on this string after shortening it to 100 characters removed the empty space at the end making it 99 characters. The logic of our function then checks if the length of the string is 100 and if so it will add 3 periods. This is a fault in our logic and we caught it using a unit test. Let's refactor the function so that it correctly accounts for this case.
+<!-- ^^^^ maybe say where the function is? -->
 
 ```js
 export const shortenText = text => {
@@ -284,8 +285,8 @@ export const shortenText = text => {
 
 <details>
 
-<summary> <code> src/utils/functions.js </code> </summary>
-
+<summary> <code> /server/utils.js </code> </summary>
+<!-- ^^^ change is here -->
 ```js
 module.exports = {
   wordCount(posts) {
